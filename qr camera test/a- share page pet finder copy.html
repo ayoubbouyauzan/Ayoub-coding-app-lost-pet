@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	  <!-- CSS FILES -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+	  <!-- Change this to your own CSS file, which you will work in -->
+	  <link rel="stylesheet" href="CSS/stylesheet1.css">
+	  
+	  <!-- responsive-->
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+
+<body
+
+	<!-- QR Camera -->
+  <div>
+	<button input ="file" accept="image/*" class="scan" type="button"><a href="#"><img src="images/scan-qr-code-icon-1 copy 2.png" alt="camera"
+		class="foto" width="200px"></a> SCAN QR-CODE</button>
+</div>
+
+	 <div>
+<form action="server.cgi" method="post" enctype="multipart/form-data">
+  <input type="file" name="image" accept="image/*" capture="user">
+  <input type="submit" value="Upload">
+</form>
+</div>
+	  
+<div>
+<input type="button" value="Say hello" onClick="showCamera('Android! Start Camera')" />
+
+<script type="text/javascript">
+    function showCamera(toast) {
+        Android.showCamera(toast);
+    }
+</script>
+</div>
+
+<div2>
+<button2 id="start">Open Camera</button2>
+<div class="video-container">
+  <video id="video" width="100%" height="480" autoplay></video>
+</div>
+
+
+<input2 type="file" accept="image/*" onchange="loadFile(event)">
+
+<div style="margin-top: 25px; padding-bottom2: -200px;" class="container">
+    <img style="border-radius: 25px;" id="output"/>
+</div>
+	</input2>
+	
+</div2>
+	  
+    <!-- Do not change unless it does not work. In that case relink to your own downloaded files -->
+	  <script src="JS/jquery-3.4.1.slim.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
